@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript Coding Challenges</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row h2">
+            <div class="col text-center">
+                Javascript Math Exercises
+            </div>
+        </div>
+        <div class="row bg-light pt-2">
+            <div class="col-4"></div>
+            <div class="col-4 text-center">
+                <p><h3>FizzBuzz</h3></p>
+                <p><h6>Enter 2 numbers between 1 and 100</h6></p>
+                <p><input type="number" id="fizzNum" min="1" max="100" style="width: 80px" /></p>
+                <p><input type="number" id="buzzNum" min="1" max="100" style="width: 80px" /></p>
+                <p><button class="btn btn-success" onclick="solveFizz()">Solve</button> <button class="btn btn-outline-danger" onclick="clearNums(click)">Clear</button></p>
+            </div>
+            <div class="col-4 h6 pt-4" id="fizzResults"></div>
+        </div>
+        <hr />
+        <div class="row bg-light pt-2">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <p><h3>Taco Cat</h3></p>
+                <p><h5>Enter a string to be reversed</h5></p>
+                <hr />
+                <div class="row">
+                    <div class="col-6 text-right">
+                        <p><label class="h6">Enter a string:</label></p>
+                        <p><label class="h6">Results:</label></p>
+                        <p><button class="btn btn-success" onclick="reverseString()">Submit</button></p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p><input type="text" id="tacoIn" value="" /></p>
+                        <p><input type="text" id="tacoOut" value="" /></p>
+                        <p><button class="btn btn-outline-danger" onclick="clearTacos()">Clear</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row bg-light pt-2">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <p><h3>Sum of all fears</h3></p>
+                <p><h6>Search an array for any two numbers that add up to the provided input</h6></p>
+                <p>You can change the array numbers - Keep them between 1 and 100</p>
+                <p>
+                    <input type="number" id="arr1" value="10" style="width: 40px" />
+                    <input type="number" id="arr2" value="15" style="width: 40px" />
+                    <input type="number" id="arr3" value="3" style="width: 40px" />
+                    <input type="number" id="arr4" value="7" style="width: 40px" />
+                    <input type="number" id="arr5" value="2" style="width: 40px" />
+                </p>
+                
+                <hr />
+                <div class="row">
+                    <div class="col-6 text-right">
+                        <p><label class="h6">Enter a number:</label></p>
+                        <p><button class="btn btn-success" onclick="searchFears()">Find it</button></p>
+                    </div>
+                    <div class="col-6 text-left">
+                        <p><input type="number" id="fearNum" value="" /></p>
+                        <p><button class="btn btn-outline-danger" onclick="clearFears()">Clear</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-light">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <h5>Results:</h5>
+                <p id="fearResults"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/sumoffears.js"></script>
+    <script src="/scripts/fizzbuzz.js"></script>
+    <script src="/scripts/tacocat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
