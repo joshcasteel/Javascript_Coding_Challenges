@@ -19,11 +19,11 @@
     if (!error) {
         for (let i = 1; i <= 100; i++) {
             if (i % Fizz == 0 && i % Buzz == 0) {
-                results[i - 1] = "FizzBuzz";
+                results[i - 1] = "<span class='fizzbuzz'>FizzBuzz</span>";
             } else if (i % Fizz == 0) {
-                results[i - 1] = "Fizz";
+                results[i - 1] = "<span class='fizz'>Fizz</span>";
             } else if (i % Buzz == 0) {
-                results[i - 1] = "Buzz";
+                results[i - 1] = "<span class='buzz'>Buzz</span>";
             } else {
                 results[i - 1] = i;
             }
