@@ -1,8 +1,8 @@
 ﻿const reverseString = () => {
+    //get value
     let string = document.getElementById("tacoIn").value;
-    let ArrTaco = string.split('', 20);
-    let RevTaco = ArrTaco.reverse();
-    let finalTaco = RevTaco.join('');
+    //reverse array and return
+    let finalTaco = string.split('').reverse().join('');
     
     document.getElementById("tacoOut").value = finalTaco;
 
